@@ -49,6 +49,7 @@ export type FeaturedProject = {
   title: string
   summary: string
   metric: string
+  image: string
   placeholder: boolean
 }
 
