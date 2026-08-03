@@ -32,5 +32,5 @@ export const FEATURED_PROJECTS: FeaturedProject[] = [
 export const TRUST_STATS: TrustStat[] = [
   { value: "12", label: "años de experiencia" },
   { value: "100%", label: "personal certificado" },
-  { value: "24/7", label: "asesoría y soporte" },
+  { value: "Medellín", label: "y Valle de Aburrá" },
 ]

@@ -13,7 +13,6 @@ const TRUST_MARKS = [
   "Cobertura en Medellín",
   "Mantenimiento periódico",
   "Asesoría técnica gratuita",
-  "Atención de emergencias 24/7",
 ]
 
 export function PartnersMarquee() {
