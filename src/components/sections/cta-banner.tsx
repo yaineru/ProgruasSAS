@@ -14,7 +14,7 @@ export function CtaBanner() {
           Cotizador en línea
         </span>
         <h2 className="relative max-w-2xl text-balance font-display text-4xl font-extrabold tracking-tight text-ink-50 sm:text-5xl">
-          Arma tu servicio en minutos, sin llamadas eternas
+          Cuéntanos tu requerimiento, sin llamadas eternas
         </h2>
         <p className="relative max-w-lg text-balance text-ink-300">
           Elige el equipo, la fecha y la ubicación. Nosotros confirmamos por

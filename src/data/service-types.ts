@@ -1,9 +1,10 @@
 import {
   Building2,
   ArrowUpFromLine,
-  Mountain,
-  ShieldCheck,
   Headset,
+  PackageSearch,
+  ShieldCheck,
+  Truck,
 } from "lucide-react"
 
 import type { ServiceType } from "@/types/content"
@@ -18,18 +19,25 @@ export const SERVICE_TYPES: ServiceType[] = [
     requiresEquipment: true,
   },
   {
-    slug: "elevador-mixto",
-    label: "Elevador mixto",
-    description: "Necesito montaje, traslado o mantenimiento de un elevador de carga y personal.",
+    slug: "malacate",
+    label: "Malacate",
+    description: "Necesito montaje, realce o mantenimiento de un malacate.",
     icon: ArrowUpFromLine,
     requiresEquipment: true,
   },
   {
-    slug: "movimiento-tierra",
-    label: "Movimiento de tierra o cimentación",
-    description: "Necesito maquinaria pesada para preparar el terreno de mi obra.",
-    icon: Mountain,
+    slug: "logistica-transporte",
+    label: "Logística y transporte de equipos",
+    description: "Necesito transportar una torre grúa, malacate o equipo pesado entre obras.",
+    icon: Truck,
     requiresEquipment: true,
+  },
+  {
+    slug: "repuestos",
+    label: "Repuestos o accesorios",
+    description: "Necesito un repuesto o accesorio para mi equipo.",
+    icon: PackageSearch,
+    requiresEquipment: false,
   },
   {
     slug: "interventoria",

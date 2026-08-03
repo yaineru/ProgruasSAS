@@ -20,17 +20,17 @@ export const FEATURED_PROJECTS: FeaturedProject[] = [
     placeholder: true,
   },
   {
-    title: "Montaje de elevador mixto",
+    title: "Montaje de malacate",
     summary:
-      "Instalación de elevador mixto de carga y personal en fachada, con personal certificado en trabajo en alturas.",
-    metric: "Cobertura en El Poblado, Medellín",
+      "Instalación de malacate de carga y personal en fachada, con personal certificado en trabajo en alturas.",
+    metric: "Cobertura en Medellín",
     placeholder: true,
   },
 ]
 
 /** Cifras propias de Progruas (piezas de marca oficiales). */
 export const TRUST_STATS: TrustStat[] = [
-  { value: "+8", label: "años de experiencia" },
+  { value: "12", label: "años de experiencia" },
   { value: "100%", label: "personal certificado" },
   { value: "24/7", label: "asesoría y soporte" },
 ]

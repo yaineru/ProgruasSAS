@@ -10,7 +10,7 @@ import { PRIMARY_CTA_HREF } from "@/lib/constants"
 export const metadata: Metadata = {
   title: "Servicios",
   description:
-    "Montaje, desmontaje, realce e interventoría de torres grúa y elevadores mixtos, mantenimiento, movimiento de tierra y asesoría técnica gratuita.",
+    "Montaje, desmontaje, realce y mantenimiento de torres grúa y malacates, alquiler de camión grúas, repuestos y asesoría técnica gratuita.",
 }
 
 export default function ServiciosPage() {
@@ -25,7 +25,7 @@ export default function ServiciosPage() {
         </h1>
         <p className="mx-auto mt-4 max-w-2xl text-balance text-lg text-muted-foreground">
           Desde el montaje de tu torre grúa hasta el mantenimiento de tu
-          elevador mixto, cubrimos toda la operación en altura.
+          malacate, cubrimos toda la operación en altura.
         </p>
       </section>
 

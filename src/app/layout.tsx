@@ -26,7 +26,7 @@ const display = Big_Shoulders({
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: `${SITE_NAME} — Torres grúa y elevadores mixtos en Medellín`,
+    default: `${SITE_NAME} — Torres grúa y malacates en Medellín`,
     template: `%s | ${SITE_NAME}`,
   },
   description: SITE_DESCRIPTION,
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     type: "website",
     locale: "es_CO",
     siteName: SITE_NAME,
-    title: `${SITE_NAME} — Torres grúa y elevadores mixtos en Medellín`,
+    title: `${SITE_NAME} — Torres grúa y malacates en Medellín`,
     description: SITE_DESCRIPTION,
   },
   twitter: {

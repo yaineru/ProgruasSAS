@@ -1,15 +1,15 @@
 import Link from "next/link"
-import { MapPin, MessageCircle, Phone } from "lucide-react"
+import { Mail, MapPin, Phone } from "lucide-react"
 
 import { Logo } from "@/components/layout/logo"
 import { InstagramIcon } from "@/components/icons/instagram-icon"
 import { SERVICES } from "@/data/services"
-import { buildWhatsappLink, CONTACT, SITE_DESCRIPTION } from "@/lib/constants"
+import { buildWhatsappLink, CONTACT, LOCATION, SITE_DESCRIPTION } from "@/lib/constants"
 
 const COMPANY_LINKS = [
   { href: "/nosotros", label: "Nosotros" },
   { href: "/servicios", label: "Servicios" },
-  { href: "/flota", label: "Flota" },
+  { href: "/maquinaria", label: "Maquinaria" },
   { href: "/cotizar", label: "Cotizar" },
   { href: "/contacto", label: "Contacto" },
 ]
@@ -87,13 +87,27 @@ export function Footer() {
                   {CONTACT.whatsappDisplay}
                 </a>
               </li>
+              <li>
+                <a
+                  href="tel:+5745592102"
+                  className="flex items-center gap-2 transition-colors hover:text-brand-500"
+                >
+                  <Phone className="size-4 shrink-0" />
+                  {CONTACT.landline}
+                </a>
+              </li>
+              <li>
+                <a
+                  href={`mailto:${CONTACT.email}`}
+                  className="flex items-center gap-2 transition-colors hover:text-brand-500"
+                >
+                  <Mail className="size-4 shrink-0" />
+                  {CONTACT.email}
+                </a>
+              </li>
               <li className="flex items-start gap-2">
                 <MapPin className="mt-0.5 size-4 shrink-0" />
-                <span>Medellín y el Valle de Aburrá</span>
-              </li>
-              <li className="flex items-center gap-2">
-                <MessageCircle className="size-4 shrink-0" />
-                Asesoría gratuita, sin compromiso
+                <span>{LOCATION.address}</span>
               </li>
             </ul>
           </div>
@@ -103,7 +117,7 @@ export function Footer() {
           <p>
             © {year} Progruas S.A.S. Todos los derechos reservados.
           </p>
-          <p>Torres grúa · Elevadores mixtos · Medellín</p>
+          <p>Torres grúa · Malacates · Camión grúas · Medellín</p>
         </div>
       </div>
     </footer>

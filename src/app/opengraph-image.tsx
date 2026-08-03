@@ -46,7 +46,7 @@ export default function OpengraphImage() {
               maxWidth: 900,
             }}
           >
-            {SITE_NAME} — Torres grúa y elevadores mixtos en Medellín
+            {SITE_NAME} — Torres grúa y malacates en Medellín
           </span>
           <span style={{ fontSize: 28, color: "#a3a3a3", maxWidth: 800 }}>
             {SITE_DESCRIPTION}

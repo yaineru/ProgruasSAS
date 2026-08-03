@@ -9,7 +9,7 @@ import { Marquee } from "@/components/motion/marquee"
  */
 const TRUST_MARKS = [
   "Operadores certificados",
-  "Flota propia",
+  "Maquinaria propia",
   "Cobertura en Medellín",
   "Mantenimiento periódico",
   "Asesoría técnica gratuita",

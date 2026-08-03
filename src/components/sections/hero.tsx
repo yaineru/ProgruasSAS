@@ -35,7 +35,7 @@ export function Hero() {
           className="flex w-fit items-center gap-2 rounded-full border border-brand-500/40 bg-brand-500/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-brand-400 backdrop-blur"
         >
           <ShieldCheck className="size-3.5" />
-          Asesoría técnica gratuita
+          Programa una visita técnica y cotizamos servicios
         </motion.div>
 
         <motion.h1
@@ -54,9 +54,9 @@ export function Hero() {
           transition={{ duration: 0.6, delay: 0.25 }}
           className="max-w-xl text-balance text-lg text-ink-300 sm:text-xl"
         >
-          Montaje, desmontaje y mantenimiento de torres grúa y elevadores
-          mixtos en Medellín y el Valle de Aburrá. Operación certificada y un
-          cotizador que arma tu servicio en minutos.
+          Montaje, desmontaje y mantenimiento de torres grúa y malacates en
+          Medellín y el Valle de Aburrá. Operación certificada y un cotizador
+          que arma tu servicio en minutos.
         </motion.p>
 
         <motion.div

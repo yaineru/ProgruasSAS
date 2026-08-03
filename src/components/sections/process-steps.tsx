@@ -6,7 +6,7 @@ import { SectionHeading } from "@/components/sections/section-heading"
 const STEPS = [
   {
     icon: MessageSquareText,
-    title: "Cuéntanos tu necesidad",
+    title: "Pide tu asesoría",
     description: "Escríbenos o usa el cotizador: tipo de carga, equipo y fecha.",
   },
   {

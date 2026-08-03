@@ -11,7 +11,7 @@ import { Reveal } from "@/components/motion/reveal"
 import { SectionHeading } from "@/components/sections/section-heading"
 import { ContactForm } from "@/components/contact/contact-form"
 import { FAQ_ITEMS } from "@/data/faq"
-import { buildWhatsappLink, CONTACT } from "@/lib/constants"
+import { buildWhatsappLink, CONTACT, LOCATION } from "@/lib/constants"
 
 export const metadata: Metadata = {
   title: "Contacto",
@@ -50,25 +50,39 @@ export default function ContactoPage() {
                 WhatsApp — {CONTACT.whatsappDisplay}
               </a>
               <a
-                href={`tel:+${CONTACT.whatsappNumber}`}
+                href={`https://wa.me/${CONTACT.whatsappNumberAlt}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-3 text-sm font-medium text-muted-foreground transition-colors hover:text-brand-600 dark:hover:text-brand-400"
+              >
+                <span className="flex size-10 items-center justify-center rounded-xl bg-brand-500/10 text-brand-600 dark:text-brand-400">
+                  <MessageCircle className="size-5" />
+                </span>
+                WhatsApp alterno — {CONTACT.whatsappDisplayAlt}
+              </a>
+              <a
+                href="tel:+5745592102"
                 className="flex items-center gap-3 text-sm font-medium transition-colors hover:text-brand-600 dark:hover:text-brand-400"
               >
                 <span className="flex size-10 items-center justify-center rounded-xl bg-brand-500/10 text-brand-600 dark:text-brand-400">
                   <Phone className="size-5" />
                 </span>
-                Llamar — {CONTACT.whatsappDisplay}
+                Línea fija — {CONTACT.landline}
               </a>
-              <div className="flex items-center gap-3 text-sm font-medium text-muted-foreground">
+              <a
+                href={`mailto:${CONTACT.email}`}
+                className="flex items-center gap-3 text-sm font-medium transition-colors hover:text-brand-600 dark:hover:text-brand-400"
+              >
                 <span className="flex size-10 items-center justify-center rounded-xl bg-brand-500/10 text-brand-600 dark:text-brand-400">
                   <Mail className="size-5" />
                 </span>
-                Escríbenos por el formulario
-              </div>
+                {CONTACT.email}
+              </a>
               <div className="flex items-center gap-3 text-sm font-medium text-muted-foreground">
                 <span className="flex size-10 items-center justify-center rounded-xl bg-brand-500/10 text-brand-600 dark:text-brand-400">
                   <MapPin className="size-5" />
                 </span>
-                Medellín y el Valle de Aburrá
+                {LOCATION.address}
               </div>
             </div>
 

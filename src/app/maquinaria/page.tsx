@@ -10,29 +10,29 @@ import { EQUIPMENT_CATEGORIES } from "@/data/equipment"
 import { GALLERY_IMAGES } from "@/data/gallery"
 
 export const metadata: Metadata = {
-  title: "Flota y galería",
+  title: "Maquinaria y galería",
   description:
-    "Conoce la flota de grúas y equipos de transporte de Progruas: tonelaje, características y disponibilidad estimada por categoría.",
+    "Conoce la maquinaria de Progruas: torres grúa, malacates y camión grúas, con características y disponibilidad estimada por categoría.",
 }
 
-export default function FlotaPage() {
+export default function MaquinariaPage() {
   return (
     <>
       <section className="mx-auto max-w-4xl px-4 py-20 text-center sm:px-6 lg:px-8">
         <span className="mx-auto inline-flex w-fit items-center gap-2 rounded-full border border-brand-500/30 bg-brand-500/10 px-3 py-1 text-xs font-semibold uppercase tracking-widest text-brand-600 dark:text-brand-400">
-          Flota
+          Maquinaria
         </span>
         <h1 className="mt-4 text-balance font-display text-5xl font-extrabold tracking-tight sm:text-6xl">
           Equipo mantenido, listo para operar
         </h1>
         <p className="mx-auto mt-4 max-w-2xl text-balance text-lg text-muted-foreground">
-          Cada grúa cuenta con mantenimiento periódico y operador certificado.
+          Cada equipo cuenta con mantenimiento periódico y operador certificado.
           Esta es una muestra de nuestras categorías principales.
         </p>
       </section>
 
       <section className="mx-auto max-w-6xl px-4 pb-20 sm:px-6 lg:px-8">
-        <RevealGroup className="grid grid-cols-1 gap-6 sm:grid-cols-2">
+        <RevealGroup className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {EQUIPMENT_CATEGORIES.map((equipment) => (
             <RevealItem key={equipment.slug}>
               <div className="flex h-full flex-col overflow-hidden rounded-2xl border border-border/60 bg-card">
@@ -42,7 +42,7 @@ export default function FlotaPage() {
                       src={equipment.image}
                       alt={equipment.name}
                       fill
-                      sizes="(min-width: 640px) 50vw, 100vw"
+                      sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
                       className="object-cover"
                     />
                   ) : (

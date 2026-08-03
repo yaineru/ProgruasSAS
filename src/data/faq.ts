@@ -4,12 +4,7 @@ export const FAQ_ITEMS: FaqItem[] = [
   {
     question: "¿Cómo cotizo un servicio de grúa o transporte?",
     answer:
-      "Usa el cotizador en línea: cuéntanos el tipo de servicio, el equipo o carga, la fecha y la ubicación. Recibirás un resumen inmediato y podrás confirmarlo por WhatsApp con un asesor.",
-  },
-  {
-    question: "¿La asesoría técnica tiene costo?",
-    answer:
-      "No. Evaluamos tu carga, sitio y cronograma sin costo ni compromiso antes de emitir cualquier cotización.",
+      "Escríbenos por WhatsApp contándonos el tipo de servicio, el equipo y la fecha — también puedes usar el cotizador en línea para dejar el resumen listo. Un asesor confirma el servicio directamente por WhatsApp.",
   },
   {
     question: "¿Los operadores están certificados?",
@@ -20,11 +15,6 @@ export const FAQ_ITEMS: FaqItem[] = [
     question: "¿En qué zonas trabajan?",
     answer:
       "Cubrimos Medellín y todo el Valle de Aburrá (Bello, Itagüí, Envigado, Sabaneta y alrededores). Para proyectos fuera de esta zona, cuéntanos y evaluamos cobertura.",
-  },
-  {
-    question: "¿Con cuánta anticipación debo reservar un equipo?",
-    answer:
-      "Recomendamos al menos 48 horas para izajes estándar y una semana para equipos de alto tonelaje o rutas con permisos especiales, aunque atendemos solicitudes urgentes según disponibilidad.",
   },
   {
     question: "¿Qué pasa después de enviar mi cotización?",

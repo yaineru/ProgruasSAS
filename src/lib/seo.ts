@@ -8,9 +8,11 @@ export function buildLocalBusinessSchema() {
     description: SITE_DESCRIPTION,
     url: SITE_URL,
     telephone: `+${CONTACT.whatsappNumber}`,
-    image: `${SITE_URL}/images/flyer-transporte.jpg`,
+    email: CONTACT.email,
+    image: `${SITE_URL}/images/galeria/torre-grua-comuna.jpg`,
     address: {
       "@type": "PostalAddress",
+      streetAddress: LOCATION.address,
       addressLocality: LOCATION.city,
       addressCountry: "CO",
     },

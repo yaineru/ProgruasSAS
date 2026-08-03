@@ -2,7 +2,7 @@ import { Hero } from "@/components/sections/hero"
 import { TrustBar } from "@/components/sections/trust-bar"
 import { ServicesGrid } from "@/components/sections/services-grid"
 import { ProcessSteps } from "@/components/sections/process-steps"
-import { FleetPreview } from "@/components/sections/fleet-preview"
+import { MachineryPreview } from "@/components/sections/machinery-preview"
 import { FeaturedProjects } from "@/components/sections/featured-projects"
 import { Testimonials } from "@/components/sections/testimonials"
 import { PartnersMarquee } from "@/components/sections/partners-marquee"
@@ -16,7 +16,7 @@ export default function Home() {
       <TrustBar />
       <ServicesGrid />
       <ProcessSteps />
-      <FleetPreview />
+      <MachineryPreview />
       <FeaturedProjects />
       <Testimonials />
       <PartnersMarquee />

@@ -5,7 +5,7 @@ import { QuoteWizard } from "@/components/quote/quote-wizard"
 export const metadata: Metadata = {
   title: "Cotizar servicio",
   description:
-    "Arma tu servicio de torre grúa, elevador mixto o movimiento de tierra en minutos: equipo, fecha y ubicación, con confirmación por WhatsApp.",
+    "Cuéntanos tu requerimiento de torre grúa, malacate o logística de transporte: equipo, fecha y ubicación, con confirmación por WhatsApp.",
 }
 
 export default function CotizarPage() {
@@ -16,7 +16,7 @@ export default function CotizarPage() {
           Cotizador
         </span>
         <h1 className="font-display text-4xl font-extrabold tracking-tight sm:text-5xl">
-          Arma tu servicio en minutos
+          Cuéntanos tu requerimiento
         </h1>
         <p className="mx-auto max-w-xl text-balance text-muted-foreground">
           Selecciona el servicio, el equipo y la fecha. Nosotros confirmamos

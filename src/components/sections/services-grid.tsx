@@ -13,7 +13,7 @@ export function ServicesGrid() {
           <SectionHeading
             eyebrow="Servicios"
             title="Todo lo que necesita tu operación"
-            description="Desde un izaje puntual hasta el mantenimiento de tu flota completa: un solo aliado técnico para cada etapa."
+            description="Desde un izaje puntual hasta el mantenimiento de tu maquinaria completa: un solo aliado técnico para cada etapa."
           />
           <Link
             href="/servicios"
