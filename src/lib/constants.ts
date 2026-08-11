@@ -12,7 +12,7 @@ export const CONTACT = {
   /** Número secundario, se muestra como alternativa en contacto/footer. */
   whatsappNumberAlt: "573178932731",
   whatsappDisplayAlt: "317 893 27 31",
-  landline: "(4) 559 21 02",
+  landline: "317 893 27 31",
   email: "progruas.pg@hotmail.com",
   instagram: "https://www.instagram.com/progruas_sas/",
   instagramHandle: "@progruas_sas",
