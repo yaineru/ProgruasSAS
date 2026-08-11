@@ -61,7 +61,7 @@ export default function ContactoPage() {
                 WhatsApp alterno — {CONTACT.whatsappDisplayAlt}
               </a>
               <a
-                href="tel:+573178932731"
+                href="tel:+573503566669"
                 className="flex items-center gap-3 text-sm font-medium transition-colors hover:text-brand-600 dark:hover:text-brand-400"
               >
                 <span className="flex size-10 items-center justify-center rounded-xl bg-brand-500/10 text-brand-600 dark:text-brand-400">
