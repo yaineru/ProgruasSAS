@@ -29,9 +29,14 @@ export function CampaignGallery({ images }: { images: CampaignImage[] }) {
                 sizes="(min-width: 1024px) 25vw, (min-width: 640px) 33vw, 50vw"
                 className="w-full transition-transform duration-500 group-hover:scale-105"
               />
-              <div className="absolute inset-0 flex items-center justify-center bg-ink-950/0 transition-colors group-hover:bg-ink-950/40">
-                <Expand className="size-6 text-ink-50 opacity-0 transition-opacity group-hover:opacity-100" />
+              <div className="absolute inset-0 flex flex-col justify-end bg-gradient-to-t from-ink-950/85 via-ink-950/0 to-ink-950/0 p-4 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                <span className="font-display text-sm font-bold leading-tight text-ink-50">
+                  {image.title}
+                </span>
               </div>
+              <span className="absolute right-3 top-3 flex size-8 items-center justify-center rounded-full bg-ink-950/50 text-ink-50 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                <Expand className="size-4" />
+              </span>
             </button>
           </RevealItem>
         ))}
@@ -39,16 +44,21 @@ export function CampaignGallery({ images }: { images: CampaignImage[] }) {
 
       <Dialog open={Boolean(active)} onOpenChange={(open) => !open && setActive(null)}>
         <DialogContent className="max-w-2xl border-none bg-transparent p-0 shadow-none">
-          <DialogTitle className="sr-only">{active?.alt}</DialogTitle>
+          <DialogTitle className="sr-only">{active?.title}</DialogTitle>
           {active ? (
-            <Image
-              src={active.src}
-              alt={active.alt}
-              width={active.width}
-              height={active.height}
-              sizes="100vw"
-              className="max-h-[85vh] w-full rounded-2xl object-contain"
-            />
+            <div className="relative overflow-hidden rounded-2xl">
+              <Image
+                src={active.src}
+                alt={active.alt}
+                width={active.width}
+                height={active.height}
+                sizes="100vw"
+                className="max-h-[85vh] w-full object-contain"
+              />
+              <span className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-ink-950/85 to-transparent px-5 py-4 font-display text-base font-bold text-ink-50">
+                {active.title}
+              </span>
+            </div>
           ) : null}
         </DialogContent>
       </Dialog>

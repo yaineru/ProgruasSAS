@@ -5,7 +5,12 @@ import { Clock, Handshake, Users, Zap } from "lucide-react"
 import { Reveal, RevealGroup, RevealItem } from "@/components/motion/reveal"
 import { SectionHeading } from "@/components/sections/section-heading"
 import { CampaignGallery } from "@/components/gallery/campaign-gallery"
+import { CampaignMarquee } from "@/components/gallery/campaign-marquee"
 import { CAMPAIGN_IMAGES } from "@/data/campaigns"
+
+const CAMPAIGN_MARQUEE_IMAGES = CAMPAIGN_IMAGES.filter(
+  (image) => image.width === image.height
+)
 
 export const metadata: Metadata = {
   title: "Nosotros",
@@ -137,7 +142,7 @@ export default function NosotrosPage() {
         </div>
       </section>
 
-      <section className="py-24">
+      <section className="overflow-hidden py-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <SectionHeading
             eyebrow="Nuestras campañas"
@@ -149,10 +154,14 @@ export default function NosotrosPage() {
             Piezas gráficas que compartimos en nuestras redes sociales, con
             proyectos reales ejecutados en Medellín y el Valle de Aburrá.
           </p>
+        </div>
 
-          <div className="mt-12">
-            <CampaignGallery images={CAMPAIGN_IMAGES} />
-          </div>
+        <div className="mt-10">
+          <CampaignMarquee images={CAMPAIGN_MARQUEE_IMAGES} />
+        </div>
+
+        <div className="mx-auto mt-10 max-w-7xl px-4 sm:px-6 lg:px-8">
+          <CampaignGallery images={CAMPAIGN_IMAGES} />
         </div>
       </section>
 
